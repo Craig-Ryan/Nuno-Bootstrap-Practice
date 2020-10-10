@@ -1,102 +1,227 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Nuno - Responsive Bootstrap Theme</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="css/fixed.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Nuno - Responsive Bootstrap Theme</title>
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/fixed.css">
-    <link rel="stylesheet" href="style.css">
-</head>
+  <body data-spy="scroll" data-target="#navbarResponsive">
+    <!-- Tell the body we will use data-spy. Need to link to the ID that links to the navigation-->
 
-<body data-spy="scroll" data-target="#navbarResponsive">
-	<!-- Tell the body we will use data-spy. Need to link to the ID that links to the navigation-->
+    <!-- Start Home Section -->
+    <div id="home">
+      <!-- Start Navigation -->
+      <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+        <a href="#" class="navbar-brand"
+          ><img src="img/nuno.png" alt="Nuno Logo"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarResponsive"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-	<!-- Start Home Section -->
-	<div id="home">
-		<!-- Start Navigation -->
-		<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-			<a href="#" class="navbar-brand"><img src="img/nuno.png" alt="Nuno Logo"></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"><span class="navbar-toggler-icon"></span></button>
-
-            <div class="collapse navbar-collapse" id="navbarResponsive"> <!--Because we are using the data-spy scroll the last li will be highlighted as active on screen unless there is data displayed for you to scroll over-->
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item"><a href="#home" class="nav-link active">Home</a></li>
-                    <li class="nav-item"><a href="#course" class="nav-link">Course</a></li>
-                    <li class="nav-item"><a href="#features" class="nav-link">Features</a></li>
-                    <li class="nav-item"><a href="#resources" class="nav-link">Resources</a></li>
-                    <li class="nav-item"><a href="#clients" class="nav-link">Clients</a></li>
-                    <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
-                </ul>
-            </div>
-		</nav>
-		<!-- End Navigation -->
-
-        <!-- Start Landing Page Section -->
-        <div class="landing">
-            <div class="home-wrap">
-                <div class="home-inner">
-
-                </div>
-            </div>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <!--Because we are using the data-spy scroll the last li will be highlighted as active on screen unless there is data displayed for you to scroll over-->
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a href="#home" class="nav-link active">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#course" class="nav-link">Course</a>
+            </li>
+            <li class="nav-item">
+              <a href="#features" class="nav-link">Features</a>
+            </li>
+            <li class="nav-item">
+              <a href="#resources" class="nav-link">Resources</a>
+            </li>
+            <li class="nav-item">
+              <a href="#clients" class="nav-link">Clients</a>
+            </li>
+            <li class="nav-item">
+              <a href="#contact" class="nav-link">Contact</a>
+            </li>
+          </ul>
         </div>
+      </nav>
+      <!-- End Navigation -->
 
-        <div class="caption text-center">
-            <h1>Welcome to Nuno</h1>
-            <h3>Udemy Bootstrap 4 course</h3>
-            <a href="#course" class="btn btn-outline-light btn-lg">Get Started</a>
+      <!-- Start Landing Page Section -->
+      <div class="landing">
+        <div class="home-wrap">
+          <div class="home-inner"></div>
         </div>
-        <!-- End Landing Page Section -->
+      </div>
 
-	</div>
+      <div class="caption text-center">
+        <h1>Welcome to Nuno</h1>
+        <h3>Udemy Bootstrap 4 course</h3>
+        <a href="#course" class="btn btn-outline-light btn-lg">Get Started</a>
+      </div>
+      <!-- End Landing Page Section -->
+    </div>
     <!-- End Home Section -->
 
-	<!--- Start Course Section -->
-	<div id="course" class="offset">
+    <!--- Start Course Section -->
+    <div id="course" class="offset">
+      <div class="col-12 narrow text-center">
+        <h1>Nuno Theme Advanced Bootstrap Course</h1>
+        <p class="lead">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+          imperdiet eget risus eget ultrices. Vestibulum in diam turpis. Vivamus
+          sodales efficitur lorem…
+        </p>
+        <a href="#" class="btn btn-secondary btn-md" target="_blank"
+          >Bootstrap Course</a
+        >
+      </div>
+    </div>
 
-	</div>
+    <!--- End Course Section -->
 
-	<!--- End Course Section -->
+    <!--- Start Features Section -->
+    <div id="features" class="offset">
+      <!-- Start Jumbotron -->
+      <div class="jumbotron">
+        <div class="narrow text-center">
+          <div class="col-12">
+            <h3 class="heading">Features</h3>
+            <div class="heading-underline"></div>
+          </div>
 
-	<!--- Start Features Section -->
-	<div id="features" class="offset">
+          <div class="row text-center">
+            <div class="col-md-4">
+              <div class="feature">
+                <i
+                  class="fas fa-play-circle fa-4x"
+                  data-fa-transform="shrink-3 up-5"></i>
+              </div>
+              <h3>Custom Animation</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+                imperdiet eget risus eget ultrices. Vestibulum in diam turpis.
+                Vivamus sodales efficitur lorem…</p>
+            </div>
 
-	</div>
+            <div class="col-md-4">
+              <div class="feature">
+                <i class="fas fa-sliders-h fa-4x" data-fa-transform="shrink-4.5 up-4.5"></i>
+              </div>
+              <h3>Content Slider</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+                imperdiet eget risus eget ultrices. Vestibulum in diam turpis.
+                Vivamus sodales efficitur lorem…</p>
+            </div>
 
-	<!--- End Features Section -->
+            <div class="col-md-4">
+              <div class="feature">
+                <i class="fab fa-wpforms fa-4x" data-fa-transform="shrink-4 up-5"></i>
+              </div>
+              <h3>Contact Form</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+                imperdiet eget risus eget ultrices. Vestibulum in diam turpis.
+                Vivamus sodales efficitur lorem…</p>
+            </div>
+          </div>
+        </div>
+        <!--End Narrow-->
+      </div>
+      <!-- End Jumbotron -->
+    </div>
 
-	<!--- Start Resources Section -->
-	<div id="resources" class="offset">
+    <!--- End Features Section -->
 
-	</div>
+    <!--- Start Resources Section -->
+    <div id="resources" class="offset"></div>
 
-	<!--- End Resources Section -->
+    <div class="fixed-background">
+        <div class="row dark text-center">
+            <div class="col-12">
+                <h3 class="heading">Built With Care</h3>
+                <div class="heading-underline"></div>
+            </div>
+            <div class="col-md-4">
+                <h3>HTML5</h3>
+                <div class="feature">
+                    <i class="fas fa-code fa-3x"></i>
+                </div>
+                <p class="lead">Built With The latest HTML5</p>
+            </div>
 
-	<!--- Start Clients Section -->
-	<div id="clients" class="offset">
+            <div class="col-md-4">
+                <h3>Bootstrap 4</h3>
+                <div class="feature">
+                    <i class="fas fa-bold fa-3x"></i>
+                </div>
+                <p class="lead">Built With The latest Bootstrap 4</p>
+            </div>
 
-	</div>
+            <div class="col-md-4">
+                <h3>CSS 3</h3>
+                <div class="feature">
+                    <i class="fab fa-css3 fa-3x"></i>
+                </div>
+                <p class="lead">Built With The latest CSS3</p>
+            </div>
+        </div>
+        <!-- End Row Dark -->
+        <div class="fixed-wrap">
+            <div class="fixed">
+                
+            </div>
+        </div>
+    </div>
+    <!--- End Resources Section -->
 
-	<!--- End Clients Section -->
+    <!--- Start Clients Section -->
+    <div id="clients" class="offset"></div>
 
-	<!--- Start Contact Section -->
-	<div id="contact" class="offset">
+    <!-- Start Jumbotron -->
+    <div class="jumbotron">
+        <div class="col-12 text-center">
+                <h3 class="heading">Clients</h3>
+                <div class="heading-underline"></div>
+            </div>
+            <!-- Start Row -->
+        <div class="row">
+            <div class="col-md-6 clients">
+                <div class="row">
+                    <div class="col-md-4">
+                        <img src="img/client1.png" alt="Client Image">
+                    </div>
+                    <div class="col-md-8">
+                        <blockquote><i class="fas fa-quote-left"></i>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+                imperdiet eget risus eget ultrices. Vestibulum in diam turpis.
+                Vivamus sodales efficitur lorem…</blockquote>
+                <hr class="clients-hr">
+                <cite>&#8212; Eric, Small Business Owner</cite>
+                    </div>
+                </div>
+            </div>
+        </div> <!--End Row-->
+    </div> <!--End Jumbotron-->
+    <!--- End Clients Section -->
 
-	</div>
+    <!--- Start Contact Section -->
+    <div id="contact" class="offset"></div>
 
-	<!--- End Contact Section -->
+    <!--- End Contact Section -->
 
-	<!--- Script Source Files -->
-	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js">
-	</script>
-	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js">
-	</script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js">
-	</script>
-	<script src="https://use.fontawesome.com/releases/v5.5.0/js/all.js"></script>
-	<!--- End of Script Source Files -->
-
-</body>
-
+    <!--- Script Source Files -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="https://use.fontawesome.com/releases/v5.5.0/js/all.js"></script>
+    <!--- End of Script Source Files -->
+  </body>
 </html>
